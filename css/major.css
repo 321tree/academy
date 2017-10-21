@@ -1,0 +1,16 @@
+.major-header{
+    margin-top: 100px;
+}
+.major-header .major-title .major-header-title{
+    
+    background-color: #fff;
+    font-size: 1.8vw;
+    position:relative;
+}
+
+/*.major-header .major-title:before{
+    content:'';
+    position:absolute;
+    height:5px;
+    background-color: #BF7C79;
+}*/

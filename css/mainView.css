@@ -1,0 +1,347 @@
+/******************** 主页面 *****************/
+/************* 新闻 *************/
+.news-flow--section {
+  position:relative;
+   margin-top: 50px;
+   width:100%;
+}
+
+.news-flow--container {
+  max-width:100%;
+  margin:0 auto;
+  padding:0 0;
+}
+
+.news-flow--content {
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap
+}
+
+.news-flow--content{
+  display:-ms-flexbox;
+  display:-webkit-box;
+  display:flex;
+  -ms-flex-pack:center;
+  -webkit-box-pack:center;
+  justify-content:center
+}
+
+.news {
+  width:100%;
+  margin-top:3em;
+  z-index:2;
+}
+
+.news>.news-list {
+  display:-ms-flexbox;
+  display:-webkit-box;
+  display:flex;
+  -ms-flex-direction:column;
+  -webkit-box-orient:vertical;
+  -moz-box-orient:vertical;
+  -o-box-orient:vertical;
+  -webkit-box-direction:normal;
+   -moz-box-direction:normal;
+    -o-box-direction:normal;
+  flex-direction:column;
+  width:100%;
+ padding-left: 5px;
+ padding-right: 5px;
+}
+.news>.news-list>.commit {
+  margin-top:1em;/*1em*/
+  list-style:none;
+  display:-ms-flexbox;
+  display:-webkit-box;
+  display:flex;
+  -ms-flex-align:start;
+  -webkit-box-align:start;
+  -moz-box-align:start;
+  -o-box-align:start;
+  align-items:flex-start;
+  background:#fff;
+  border-radius:.4em;
+  border-bottom:1px solid #3E403F;
+  padding:1.5em;/*1.5em*/
+  transition:box-shadow .2s ease,-webkit-transform .2s ease,-moz-transform .2s ease,-o-transform .2s ease;
+  -webkit-transition:box-shadow .2s ease,-webkit-transform .2s ease,-moz-transform .2s ease,-o-transform .2s ease;
+  transition:transform .2s ease,box-shadow .2s ease;
+  transition:transform .2s ease,box-shadow .2s ease,-webkit-transform .2s ease,-moz-transform .2s ease,-o-transform .2s ease;
+  box-shadow: 6px 6px 7px #C4C1C1;
+}
+@media screen and (max-width: 37.5rem) {
+  .news>.news-list>.commit {
+    -ms-flex-direction:column;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    -ms-flex-align:center;
+    -webkit-box-align:center;
+    -moz-box-align:center;
+    -o-box-align:center;
+    -ms-grid-row-align:center;
+    align-items:center;
+    text-align:center;
+  }
+}
+.news>.news-list>.commit:hover {
+  -moz-transform:scale(1.04);
+  -o-transform:scale(1.04);
+  -webkit-transform:scale(1.04);
+  transform:scale(1.04);
+  box-shadow:0 1.25rem 2.5rem -0.625rem rgba(32,32,32,0.15);
+}
+.news>.news-list>.commit>.profile-picture {
+  width:4.625rem;/*2.625rem;*/
+}
+.news>.news-list>.commit>.profile-picture>img {
+  display:block;
+  max-width:100%;
+  border-radius:.25em;
+  padding-top:1.0em;
+}
+.news>.news-list>.commit>.news-info {
+  -ms-flex:1;
+  -webkit-box-flex:1;
+  flex:1;
+  display:-ms-flexbox;
+  display:-webkit-box;
+  display:flex;
+  -ms-flex-direction:column;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction:column;
+  padding:1.0em 1.5em;/*0 1.5em;*/
+}
+@media screen and (max-width: 37.5rem) {
+  .news>.news-list>.commit>.news-info {
+    margin-top:.5em
+  }
+}
+.news>.news-list>.commit>.news-info>.news-title {
+  font-size:2.215rem;/*.8125rem;*/
+  font-weight:700;
+  line-height:1.58;
+}
+.news>.news-list>.commit>.news-info>.meta {
+  font-size:.925rem;/*.625rem;*/
+  line-height:1.58;
+  margin-top:1em;
+  color:#969696;
+}
+.news>.news-list>.commit>.commit-actions {
+  display:-ms-flexbox;
+  display:-webkit-box;
+  display:flex;
+  -ms-flex-align:center;
+  -webkit-box-align:center;
+  align-items:center;
+  font-size:1.225rem;/*.625rem;*/
+  font-weight:600;
+  margin-right:1.0em;
+}
+@media screen and (max-width: 37.5rem) {
+  .news>.news-list>.commit>.commit-actions {
+    margin-top:1em
+  }
+}
+.news>.news-list>.commit>.commit-actions>.button-group {
+  display:-ms-flexbox;
+  display:-webkit-box;
+  display:flex;
+  -ms-flex-align:center;
+  -webkit-box-align:center;
+  align-items:center;
+  border:.0625rem solid #f7f7f7;
+  border-radius:.4em;
+  margin-right:1em;
+  margin-top: 1.5em;
+}
+.news>.news-list>.commit>.commit-actions>.button-group>* {
+  border-right:.0625rem solid #f7f7f7;
+  padding:1.0em 1.2em;
+}
+.news>.news-list>.commit>.commit-actions>.button-group>:last-of-type {
+  border:0;
+}
+.news>.news-list>.commit>.commit-actions>.button-group>* img {
+  width:.875rem;
+}
+/*********** END ********/
+/*********** 下载 ***********/
+.right-2 .download-link{
+  margin-top:15px;
+}
+
+.right-2 .download-link span{
+  padding-right: 10px;
+}
+
+.right-2 .download-link a{
+  padding:4px 7px;
+}
+
+.right-2 .download-link a:hover,
+.right-2 .download-link a:focus{
+  text-decoration: none;
+  background-color:#EF7C78;
+  color:#fff;
+  box-shadow: 6px 6px 7px #C4C1C1;
+}
+/*********** END **********/
+/********* 第二部分的标题 *********/
+.model-header{
+  margin-top: 150px;
+  border-bottom: 1px solid #EBC9C8;
+  padding-bottom: 20px;
+}
+/********* END **********/
+/********** 八大版块 *********/
+ /*鼠标聚焦事件 */
+.slide-module:hover,
+.slide-module:focus{
+  text-decoration: none;
+}
+
+.slide-module:hover .bg-1-title,
+.slide-module:focus .bg-1-title{
+  text-decoration:none;
+  font-size: 1.5vw;
+}
+ /*END */
+/* 第一排的轮播图版块*/
+.bg-1{
+  margin-top: 50px;
+  height:300px;
+  background-color:#fff; 
+  box-shadow: 6px 6px 7px #C4C1C1;
+}
+.bg-1-title{
+  padding-top: 5px;
+  background-color:#2F3130;
+  text-align: center;
+  height:50px;
+  font-size: 1.3vw;
+  color:#fff;
+}
+/*end*/
+/*两排的轮播图片*/
+.bg-1 .item-bg-1,
+.bg-2 .item-bg-2{
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  height:250px;
+  width:100%;
+}
+/*end*/
+/*两排不是轮播图的版块（上排的偶数模块和下排的奇数模块）*/
+.bg-1-even,
+.bg-2-odd{
+  margin-top:50px;
+  height:300px;
+  box-shadow: 4px 4px 5px #C4C1C1;
+  padding: 120px 50px;
+}
+.bg-1-even{
+  background-color:#05D3CD;
+  box-shadow: 6px 6px 7px #C4C1C1;
+}
+.bg-1-even .even-title,
+.bg-2-odd .even-title{
+  padding-top: 8px;
+  text-align: center; 
+   font-size: 1.8vw;
+  color:#fff;
+}
+.bg-2-odd{
+  background-color:#70A7D8;
+  box-shadow: 6px 6px 7px #C4C1C1;
+}
+/*end*/
+/*第二排的轮播图模块*/
+.bg-2{
+  margin-top: 50px;
+  margin-bottom: 300px;
+  height:300px;
+  background-color:#B8BFAF; 
+  box-shadow: 6px 6px 7px #C4C1C1;
+}
+/*end*/
+
+/*1500px分辨率兼容*/
+@media screen and (max-width: 1600px) and (min-width: 1204px){
+  .bg-1{
+  margin-top: 50px;
+  height:250px;
+  background-color:#fff; 
+  box-shadow: 6px 6px 7px #C4C1C1;
+}
+.bg-2{
+  margin-top: 50px;
+  margin-bottom: 250px;
+  height:250px;
+  background-color:#B8BFAF; 
+  box-shadow: 6px 6px 7px #C4C1C1;
+}
+  .bg-1-even,
+  .bg-2-odd{
+    margin-top:50px;
+    height:250px;
+    box-shadow: 4px 4px 5px #C4C1C1;
+    padding: 100px 50px;
+  }
+
+  .bg-1-title{
+  padding-top: 5px;
+  height:50px;
+}
+  .bg-1 .item-bg-1,
+  .bg-2 .item-bg-2{
+  height:200px;
+}
+  .news>.news-list>.commit>.news-info>.news-title {
+  font-size:1.63rem;/*.8125rem;*/
+  font-weight:700;
+  line-height:1.58;
+}
+}
+
+/*1024px分辨率兼容*/
+@media screen and (max-width: 1200px){
+  .bg-1{
+  margin-top: 50px;
+  height:200px;
+  background-color:#fff; 
+  box-shadow: 6px 6px 7px #C4C1C1;
+}
+.bg-2{
+  margin-top: 50px;
+  margin-bottom: 200px;
+  height:200px;
+  background-color:#B8BFAF; 
+  box-shadow: 6px 6px 7px #C4C1C1;
+}
+  .bg-1-even,
+  .bg-2-odd{
+    margin-top:50px;
+    height:200px;
+    box-shadow: 4px 4px 5px #C4C1C1;
+    padding: 80px 50px;
+  }
+
+  .bg-1-title{
+  padding-top: 15px;
+  height:50px;
+}
+  .bg-1 .item-bg-1,
+  .bg-2 .item-bg-2{
+  height:150px;
+}
+  .news>.news-list>.commit>.news-info>.news-title {
+  font-size:1.23rem;/*.8125rem;*/
+  font-weight:700;
+  line-height:1.58;
+}
+}
+/********* end:主页面 ********/
+

@@ -1,0 +1,116 @@
+/*************** 老师页面 **************/
+.left-content{
+    margin-top: 100px;
+}
+/*老师模块*/
+.left-content .media-tab{
+    margin-bottom: 50px;
+     box-shadow: 6px 6px 7px #C4C1C1;
+}
+.left-content .media-tab .media-img{
+    height:100px;
+    width:1800px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.left-content .media-tab .media-content{
+    background-color: #fff;
+    padding:20px 30px;
+}
+.left-content .media-tab .media-content button{
+     border:0;
+      box-shadow: 3px 3px 5px #C4C1C1;
+      margin-top: 20px;
+}
+.left-content .media-tab .media-content .media-heading{
+     font-size: 1.0vw;
+}
+.left-content .media-tab .media-content p{
+    margin-top: 15px;
+    line-height: 2em;
+}
+/*弹出框模块*/
+.modal-content .modal-body .modal-img{
+    height:600px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.modal-content .modal-body .modal-body-con{
+    height:600px;
+}
+.modal-content .modal-body .modal-body-con p{
+    text-indent: 2em;
+    line-height:1.8em;
+    padding:.2em 1em;
+}
+.modal-myModal{
+     width:50%;
+    height:600px;
+}
+.modal-myHeader{
+    background-color: #F4655F;
+}
+.modal-myBody{
+    background-color: #E2E1E1;
+}
+/*end */
+/***** end：老师模块 *******/
+/********* 右边模块二 **********/
+.right-2 .right-2-content ul{
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+.right-2 .right-2-content ul li{
+  display: inline;
+}
+.right-2 .right-2-content ul li a{
+  display: inline-block;
+  padding:4px 30px;
+  background-color: #2F3130;
+  color:#fff;
+  border-radius: .7em;
+}
+.right-2 .right-2-content ul li > a:hover,
+.right-2 .right-2-content ul li > a:focus {
+  text-decoration: none;
+  background-color: #F3726D;
+  color:#fff;
+}
+/********** end : 右边模块二 ***********/
+
+/*1500px分辨率兼容*/
+@media screen and (max-width: 1600px) and (min-width: 1204px){
+    .modal-content .modal-body .modal-img{
+        height:400px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .modal-content .modal-body .modal-body-con{
+        height:400px;
+    }
+
+    .modal-myModal{
+        height:400px;
+    }
+}
+
+/*1024px分辨率兼容*/
+@media screen and (max-width: 1200px){
+    .modal-content .modal-body .modal-img{
+        height:400px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .modal-content .modal-body .modal-body-con{
+        height:400px;
+    }
+
+    .modal-myModal{
+        height:400px;
+    }
+}
+/********************* END: 老师页面 ********************/
+

@@ -1,0 +1,227 @@
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,dd,dt{
+  color:#222;
+}
+
+dd,dt{
+  text-indent: 2em;
+  line-height: 2em;
+  font-size: 1.2vw;
+}
+
+p,a{
+  color:#222;
+  font-size: 1.0vw;
+  font-weight:500;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: "Microsoft YaHei";
+  background: #E2E1E1;
+}
+/**************** 头部 ***************/
+.head{
+  height:300px;
+  box-shadow: 6px 6px 7px #C4C1C1;
+}
+/*************** END **************/
+/*************** 导航条 **************/
+.main-nav{
+  background-color: #fff;
+  border-bottom: 2px solid #DDDADA;
+  border-top:1px solid #D5D1D1;
+  box-shadow: 6px 6px 7px #C4C1C1;
+}
+.container .collapse ul{
+ margin:0;
+ padding:0;
+ text-align: center;
+}
+.container .collapse .nav-menu > li{
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+}
+.container .collapse .nav-menu li a{
+  text-decoration: none;
+  font-size: 1.2vw;
+  transition:color .25s linear 0.05s;
+}
+/*鼠标聚焦事件*/
+.container .collapse .nav-menu li:hover>a,
+.container .collapse .nav-menu li:focus>a{
+  text-decoration: none;
+  color:#F3726D;
+}
+/*end*/
+/******************* END ****************/
+/******************* 主体内容 ****************/
+.sec-1{
+  margin-bottom: 100px;
+}
+/******************* 右边的三个小模块 ******************/
+/*模块一：社区*/
+.right-1{
+  margin-top: 100px;
+  background-color: #fff;
+  padding:25px 35px; 
+  box-shadow: 6px 6px 7px #C4C1C1;
+}
+p.wechat{
+  padding-top: 10px;
+}
+.right-1-content button{
+  float:right;
+}
+.right-1-content img{
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height:70px;
+  width:70px;
+}
+.modal-content img{
+  height:500px;
+  width:100%;
+}
+p.message-board a{
+  color:#EF7C78;
+}
+p.message-board span{
+  padding-left: 8px;
+  color:#EF7C78;
+}
+/*end*/
+/*模块二：下载*/
+.right-2{
+ margin-top: 50px;
+ background-color: #fff;
+ padding:25px 35px;
+ box-shadow: 6px 6px 7px #C4C1C1;
+}
+/*end*/
+/*模块三：标签云*/
+.right-3{
+ margin-top: 50px;
+ background-color: #fff;
+ padding:25px 35px;
+ box-shadow: 6px 6px 7px #C4C1C1;
+}
+.right-3 .right-3-content{
+  padding-top: 20px;
+}
+.right-3 .right-3-content a{
+  border:1px solid #E1DEDE;
+  display: inline-block;
+  padding:2px 6px;
+  margin: 0 7px 7px 0;
+  border-radius: .3em;
+}
+.right-3 .right-3-content a:hover,
+.right-3 .right-3-content a:focus{
+  text-decoration: none;
+  color: #fff;
+  background-color: #EF7C78;
+  box-shadow: 12px 12px 12px #C4C1C1;
+}
+/*end*/
+/*三个模块的标题*/
+.right-1 .title,
+.right-2 .title,
+.right-3 .title{
+  font-size: 1.5vw;
+  color:#222;
+  position:relative;
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.right-1 .title:after,
+.right-2 .title:after,
+.right-3 .title:after{
+  content:"";
+  width:130px;
+  left:0;
+  top:42px;
+  height:2px;
+  background-color:#EF7C78;
+  position:absolute; 
+}
+/*end*/
+/*********************** END ***********************/
+/*********** 底部（负责人、中科曙光、友情链接）***********/
+.main-foot{
+ background-color:#F3726D; 
+}
+.widget{
+  height:300px;
+  margin-left: 50px;
+}
+/*标题*/
+.widget .foot-title{
+  color:#222;
+  font-size: 1.5vw;
+  margin: 50px 30px 20px;
+  padding:20px 0;
+  border-bottom:2px solid #fff;
+  position:relative;
+  width:50%;
+}
+.widget .foot-title:after{
+  content:"";
+  position:absolute;
+  height:2px;
+  margin-top: 51px;
+  left:0;
+  background-color:#434645;
+  width:40%;
+}
+/*end*/
+/*链接*/
+.widget .widget-label{
+  width:80%;
+  margin-left: 20px;
+  padding:15px 0 30px;
+}
+.widget .widget-label > a,
+.widget .widget-label > p > span{
+  padding:2px 4px;
+  margin:5px 7px;
+}
+.widget .widget-label > a{
+  display:inline-block;
+}
+/*链接聚焦事件*/
+.widget .widget-label > a:hover,
+.widget .widget-label > a:focus{
+  text-decoration: none;
+  background-color: #2F3130;
+  color:#fff;
+  cursor:pointer;
+   box-shadow: 6px 6px 7px #444745;
+}
+/*end*/
+/**************** END ***************/
+/**************** 页脚 **************/
+.root{
+  height:100px;
+  background-color:#D25B56; 
+}
+.root-content{
+  padding-top: 30px;
+  text-align: center;
+}
+.root-content span{
+   margin-right: 10px;
+}
+/*************** END **************/
+

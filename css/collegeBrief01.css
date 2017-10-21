@@ -1,0 +1,65 @@
+/******************** 文章页面 *******************/
+/******* 左边文章部分 *******/
+.sec-1 .left-content{
+  margin-top: 100px;
+  background-color: #fff;
+}
+/*文章标题*/
+.sec-1 .left-content .title{
+  text-align:center;
+  padding-top:.75em;
+}
+/*end*/
+.sec-1 .left-content .sec-1-content{
+  padding: 50px 50px;
+}
+/*文章图片*/
+.sec-1 .left-content .sec-1-content img{
+  width:100%;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  border-radius: 0.3em;
+}
+/*end*/
+/*文章段落*/
+.sec-1 .left-content .sec-1-content p{
+  color:#222;
+ text-indent: 2em;
+  line-height: 2em;
+  font-size: 1.2vw;
+}
+/*右下角的两个按钮*/
+.sec-1 .left-content .sec-1-content ul{
+  float:right;
+}
+/*end*/
+/****** 右边模块二 *******/
+.right-2 .right-2-content ul,
+.sec-1 .left-content .sec-1-content ul{
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+.right-2 .right-2-content ul li,
+.sec-1 .left-content .sec-1-content ul li{
+  display: inline;
+}
+.right-2 .right-2-content ul li a,
+.sec-1 .left-content .sec-1-content ul li a{
+  display: inline-block;
+  padding:4px 30px;
+  background-color: #404040;
+  color:#fff;
+  border-radius: .7em;
+}
+.right-2 .right-2-content ul li > a:hover,
+.right-2 .right-2-content ul li > a:focus ,
+.sec-1 .left-content .sec-1-content ul li > a:hover,
+.sec-1 .left-content .sec-1-content ul li > a:focus{
+  text-decoration: none;
+  background-color: #EF7C78;
+  color:#555;
+  box-shadow: 6px 6px 7px #F89E9B;
+}
+/*end*/
+/*************** end :文章页面 ***************/
